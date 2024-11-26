@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Study</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;  /* 使子元素垂直排列 */
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 1200px;
+            table-layout: fixed;
+        }
+
+        table, th, td {
+            border: 1px solid #000;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        button {
+            padding: 5px 10px;
+            font-size: 15px;
+            cursor: pointer;
+            width: 80px;
+            margin: 10px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+
+        button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .score-buttons {
+            margin-top: 20px;
+        }
+
+        .score-buttons button {
+            margin: 5px;
+            width: 50px;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>交互式查询</h1>
+    <p id="serverMessage">Connecting to server...</p>
+
+    <!-- 响应区域 -->
+    <pre id="response"></pre>
+
+    <!-- 动态按钮区域 -->
+    <div id="buttonContainer" class="hidden"></div>
+
+    <br>
+    <div>
+        <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;参考数据</strong><br>
+        已行驶里程: 1000-595k<br>
+        马力: 41-612<br>
+        价格: 15k-12100k</p>
+    </div>
+
+    <script>
+        var ws = new WebSocket('ws://localhost:9002/');
+
+        // 当 WebSocket 连接打开时
+        ws.onopen = function() {
+            document.getElementById('serverMessage').innerText = "";
+            ws.send("1");
+        };
+
+        window.onbeforeunload = function() {
+            ws.close();  // 用户离开或刷新页面时，主动关闭连接
+        };
+
+        ws.onclose = function(event) {
+            console.log('Connection closed:', event);
+        };
+
+        // 当收到服务器消息时
+        ws.onmessage = function(event) {
+            var message = event.data;
+            document.getElementById('response').innerText = message;
+            var buttonContainer = document.getElementById('buttonContainer');
+            buttonContainer.innerHTML = '';  // 清空按钮区域
+
+            // 判断是否显示两个按钮或10个按钮
+            if (message.includes("Please choose the car you favor more.") || message.includes("请选择您更加喜欢的一辆车")) {
+                createButtons(2);  // 显示两个按钮
+            } else {
+                createButtons(10);  // 显示10个按钮
+            }
+
+            // 如果收到 "Thank you!"，隐藏输入框和按钮
+            if (message === "Thank you!") {
+                try {
+                    window.location.href = "thank(Chinese).html"; // 替换为你想跳转的页面
+                } catch (error) {
+                    console.error("页面跳转出错: ", error);
+                    alert("无法跳转页面，请稍后再试。");
+                }
+            }
+            else {
+                document.getElementById('buttonContainer').classList.remove('hidden');
+            }
+        };
+
+
+        // 创建指定数量的按钮
+        function createButtons(number) {
+            var buttonContainer = document.getElementById('buttonContainer');
+            for (var i = 1; i <= number; i++) {
+                const button = document.createElement('button');
+                button.innerText = i;
+                button.onclick = function() {
+                    console.log(button.innerText);
+                    ws.send(button.innerText);  // 将按钮的数字发送到服务器
+                    document.getElementById('buttonContainer').classList.add('hidden');  // 隐藏按钮
+                };
+                buttonContainer.appendChild(button);
+            }
+        }
+    </script>
+</body>
+
+</html>

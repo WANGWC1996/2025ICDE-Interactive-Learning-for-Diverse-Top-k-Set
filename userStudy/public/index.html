@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consent Form</title>
+    <style>
+        /* 让整个页面居中 */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 使得内容占满整个视口高度 */
+            margin: 0; /* 清除默认的 body 外边距 */
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center; /* 标题居中 */
+        }
+
+        /* 格式化文本区域 */
+        #consentText {
+            max-width: 800px;
+            text-align: left;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            overflow-y: auto;
+        }
+
+        button {
+            padding: 5px 10px;
+            font-size: 15px;
+            cursor: pointer;
+            width: 200px;
+            height: 60px;
+            margin: 10px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome 欢迎！</h1>
+    <h3>Please Choose the Language 请选择语言</h3>
+
+    <div class="button">
+        <!-- 英文按钮 -->
+        <button onclick="goToEnglishPage()">English</button>
+
+        <!-- 中文按钮 -->
+        <button onclick="goToChinesePage()">中文</button>
+    </div>
+
+
+    <script>
+        // 跳转到英文页面
+        function goToEnglishPage() {
+            try {
+                window.location.href = "consentForm(English).html"; // 替换为英文页面的路径
+            } catch (error) {
+                console.error("页面跳转出错: ", error);
+                alert("无法跳转页面，请稍后再试。");
+            }
+        }
+
+        // 跳转到中文页面
+        function goToChinesePage() {
+            try {
+                window.location.href = "consentForm(Chinese).html"; // 替换为中文页面的路径
+            } catch (error) {
+                console.error("页面跳转出错: ", error);
+                alert("无法跳转页面，请稍后再试。");
+            }
+        }
+    </script>
+</body>
+</html>

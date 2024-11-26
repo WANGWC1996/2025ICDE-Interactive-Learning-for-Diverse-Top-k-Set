@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Diversity"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="run">
+				<Option output="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/run" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/."/>
+					<Add directory="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/Others"/>
+					<Add directory="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull"/>
+					<Add directory="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/QuadProg"/>
+					<Add directory="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure"/>
+					<Add directory="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/UH"/>
+					<Add directory="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/libs/boost_1_82_0"/>
+					<Add directory="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/libs"/>
+					<Add directory="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/libs/libs/glpk/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 run"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="run/fast">
+				<Option output="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/run" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/."/>
+					<Add directory="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/Others"/>
+					<Add directory="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull"/>
+					<Add directory="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/QuadProg"/>
+					<Add directory="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure"/>
+					<Add directory="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/UH"/>
+					<Add directory="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/libs/boost_1_82_0"/>
+					<Add directory="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/libs"/>
+					<Add directory="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/libs/libs/glpk/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 run/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/ActiveRanking/ActiveRanking.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/ActiveRanking/ActiveRanking.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/GroundTruth/Groundtruth.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/GroundTruth/Groundtruth.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/HDIA/Piecewise_exhaustion.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/HDIA/Piecewise_exhaustion.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/Others/lp.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/Others/lp.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/Others/operation.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/Others/operation.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/Others/pruning.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/Others/pruning.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/PreferenceLearning/preferenceLearning.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/PreferenceLearning/preferenceLearning.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/QuadProg/Array.cc">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/QuadProg/Array.hh">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/QuadProg/QuadProg++.cc">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/QuadProg/QuadProg++.hh">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/RH/RH.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/RH/RH.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/SinglePass/singlePass.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/SinglePass/singlePass.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/TDIA/PI.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/TDIA/PI.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/UH/UH.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/UH/UH.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/UH/frame.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/UH/frame.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/libs/boost_1_82_0/boost/asio.hpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/libs/websocketpp/config/asio_no_tls.hpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/libs/websocketpp/server.hpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/main.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/output/ext_pt.txt">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/output/hyperplane_data.txt">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/output/point.txt">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/output/top.txt">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/geom.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/geom.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/geom2.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/global.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/io.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/io.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/libqhull.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/libqhull.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/mem.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/mem.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/merge.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/merge.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/poly.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/poly.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/poly2.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/qhull_a.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/qhull_build.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/qhull_build.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/qset.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/qset.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/random.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/random.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/rboxlib.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/stat.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/stat.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/user.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/user.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/usermem.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/userprintf.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/qhull/userprintf_rbox.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/Partition.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/Partition.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/choose_item.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/choose_item.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/cluster_t.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/cluster_t.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/data_struct.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/data_utility.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/data_utility.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/define.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/halfspace_tree.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/halfspace_tree.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/hyperplane.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/hyperplane.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/hyperplane_set.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/hyperplane_set.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/interaction_tree.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/interaction_tree.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/point_set.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/point_set.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/point_t.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/point_t.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/rtree.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/rtree.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/s_node.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/s_node.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/u_vector.cpp">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/structure/u_vector.h">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/wangweicheng/Desktop/on-going/Diversity/Experiments/Code/userStudy/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
